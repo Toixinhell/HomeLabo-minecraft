@@ -1,6 +1,6 @@
 {
     "type": "datapacks",
-    "version": "1.21",
+    "version": "1.21.8",
     "packs": {
         "survival": [
             "afk display",
