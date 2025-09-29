@@ -1,0 +1,24 @@
+{
+    "type": "datapacks",
+    "version": "1.21",
+    "packs": {
+        "survival": [
+            "afk display",
+            "double shulker shells",
+            "durability ping",
+            "hard on start",
+            "multiplayer sleep",
+            "more mob heads",
+            "name formatting stations",
+            "nether portal co-ordinates",
+            "player head drops",
+            "silence mobs",
+            "spectator conduit power",
+            "spectator night vision",
+            "track statistics",
+            "wandering trades"
+        ],
+        "items": ["armored elytra"]
+    },
+    "result": "ok"
+}

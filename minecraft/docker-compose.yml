@@ -1,0 +1,48 @@
+services:
+  vanillatweaks:
+    container_name: minecraft
+    environment:
+      DEBUG_HELPER: 'True'
+      ENABLE_QUERY: 'TRUE'
+      ENABLE_ROLLING_LOGS: 'true'
+      ENFORCE_WHITELIST: 'true'
+      EULA: 'TRUE'
+      EXISTING_OPS_FILE: SYNCHRONIZE
+      EXISTING_WHITELIST_FILE: SYNCHRONIZE
+      ICON: https://toixinhell.ch/images/minecraft.png
+      MOTD: ToixInHell Rocks!
+      OPS: |-
+        ToixInHell
+      OVERRIDE_ICON: 'true'
+      RCON_PASSWORD: "sadrf1q32r32411111\xA715qawre"
+      RCON_PORT: '25575'
+      REMOVE_OLD_VANILLATWEAKS: 'TRUE'
+      SEED: '-1378783619600392495'
+      SERVER_NAME: ToixInHellMC
+      STOP_SERVER_ANNOUNCE_DELAY: 30
+      TYPE: FABRIC
+      TZ: Europe/Berlin
+      VANILLATWEAKS_FILE: /config/vanillatweaks-datapacks.json,/config/vanillatweaks-resourcepacks.json,/config/vanillatweaks-craftingtweaks.json
+      VERSION: 1.21
+      WHITELIST: |-
+        ToixInHell
+        Hengsti
+        AmRank
+        FlakyMet
+        Hengschti
+    image: itzg/minecraft-server
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://192.168.2.44:12201
+        tag: minecraft
+    ports:
+    - 25565:25565/tcp
+    - 8123:8123/tcp
+    restart: unless-stopped
+    network_mode: bridge
+    volumes:
+    - /home/toix/data/config/minecraft:/data
+    - ./vanillatweaks-datapacks.json:/config/vanillatweaks-datapacks.json:ro
+    - ./vanillatweaks-resourcepacks.json:/config/vanillatweaks-resourcepacks.json:ro
+    - ./vanillatweaks-craftingtweaks.json:/config/vanillatweaks-craftingtweaks.json:ro
