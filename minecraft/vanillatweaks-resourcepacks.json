@@ -1,6 +1,8 @@
 {
     "type": "resourcepacks",
     "version": "1.21",
-    "packs": {},
+    "packs": {
+        "aesthetic": ["CherryPicking", "BlackNetherBricks", "AlternateBlockDestruction"]
+    },
     "result": "ok"
 }
