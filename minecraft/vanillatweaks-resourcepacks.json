@@ -1,8 +1,6 @@
 {
     "type": "resourcepacks",
     "version": "1.21",
-    "packs": {
-        "aesthetic": []
-    },
+    "packs": {},
     "result": "ok"
 }

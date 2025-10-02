@@ -1,9 +1,6 @@
 {
     "type": "datapacks",
     "version": "1.21",
-    "packs": {
-        "survival": [],
-        "items": []
-    },
+    "packs": {},
     "result": "ok"
 }
