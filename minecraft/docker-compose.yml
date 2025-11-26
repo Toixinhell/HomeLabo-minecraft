@@ -23,7 +23,7 @@ services:
       TYPE: FABRIC
       TZ: Europe/Berlin
       VANILLATWEAKS_FILE: /config/vanillatweaks-datapacks.json,/config/vanillatweaks-resourcepacks.json,/config/vanillatweaks-craftingtweaks.json
-      VERSION: 1.21.9
+      VERSION: 1.21.10
       WHITELIST: |-
         ToixInHell
         Hengsti
